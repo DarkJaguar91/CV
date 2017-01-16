@@ -1,55 +1,26 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+\documentclass[11pt,a4paper,sans]{moderncv}
 
+\moderncvstyle{classic}
+\moderncvcolor{green}
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\renewcommand{\familydefault}{\rmdefault}
 
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
+\usepackage[utf8]{inputenc}                       % if you are not 
 \usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
-% personal data
+\setlength{\hintscolumnwidth}{3cm}                % if you want to 
+
 \name{Brandon}{Talbot}
-\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{463 Sibelius Street}{0181 Lukasrand Pretoria}{South Africa}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{+27~(82)~491~3690}                   % optional, remove / comment the line if not wanted
-\phone[fixed]{+27~(12)~344~6358}                     % optional, remove / comment the line if not wanted
-\email{bjtalbot@webafrica.org.za}                               % optional, remove / comment the line if not wanted
-\homepage{people.cs.uct.ac.za/\textasciitilde btalbot}                         % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}                % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                % optional, remove / comment the line if not wanted
+\title{Curriculum Vitae}
+\address{463 Sibelius Street}{0181 Lukasrand Pretoria}{South Africa}
+\phone[mobile]{+27~(82)~491~3690}
+\phone[fixed]{+27~(12)~344~6358}
+\email{bjtal91@gmail.com}
+\homepage{people.cs.uct.ac.za/\textasciitilde btalbot}
+\photo[64pt][0.4pt]{picture}
 
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
+	
 \makecvtitle
 
 %\section{Personal Details}
@@ -68,17 +39,21 @@ Software development consultant for Entelect.\\
 	\item \textbf{Standard Bank} \\
 		\textit{(09 February 2016 - Present)}\\
 			Android developer for Standard Bank's mobile banking application. \\
-			I worked on the Day to Day team where I worked on new features and maintenance of old features for account money transfers, payments, value added services and more.\\
-			Standard Bank uses a Agile SCRUM methadology.\\
+			Worked on the Day to Day team on new features and maintenance of old features for account money transfers, payments, value added services and more.\\
+			Standard Bank uses an Agile SCRUM methadology.\\
 			\textbf{Technologies:}
 			\begin{itemize}
 				\item Android
 				\item Java
+				\item IntelliJ Idea
+				\item Maven
+				\item Android Studio
+				\item Gradle
 			\end{itemize}
 	\item \textbf{Seecrypt} \\
 		\textit{(09 October 2014 - 09 February 2016)}\\
 			Android developer for Seecrypts new SC3 secure talk and chat application. \\
-			SC3 is a chat application similar to WhatsApp but it had call and encryption functionality before WhatsApp did. \\
+			SC3 is a chat application similar to WhatsApp but it had call and encryption functionality before WhatsApp.\\
 			Seecrypt used an Agile SCRUM methadology.\\
 			\textbf{Technologies:}
 			\begin{itemize}
@@ -90,6 +65,8 @@ Software development consultant for Entelect.\\
 				\item Bluetooth programming
 				\item Cryptography
 				\item Kotlin
+				\item Android Studio
+				\item Gradle
 			\end{itemize}
 \end{itemize}
 }
@@ -107,6 +84,8 @@ Software Development consultant for BSG.\\
 			\item C\#
 			\item MVC Razer
 			\item Visual Studio
+			\item Resharper
+			\item WCS Services
 		\end{itemize}
 \end{itemize}
 }
@@ -117,40 +96,32 @@ Software Development consultant for BSG.\\
 \begin{itemize}%
 \item Set up computer systems for daily work of the company.
 \item Created many Excel Editors to do many days work in a matter of minutes.
-%\item Achievement 2, with sub-achievements:
- % \begin{itemize}%
-  %\item Sub-achievement (a);
-  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-  %  \begin{itemize}
-  %  \item Sub-sub-achievement i;
-  %  \item Sub-sub-achievement ii;
-  %  \item Sub-sub-achievement iii;
-  %  \end{itemize}
-  %\item Sub-achievement (c);
-  %\end{itemize}
-%\item Achievement 3.
 \end{itemize}}
 \subsection{Miscellaneous}
 \cventry{2005, 2007, 2008}{Team Captain \& Participant at Karate World Championships}{\newline{}Scorpion Karate}{Las Vegas, England, Italy}{}{Participated in World Shotokan Karate (FSKA - Fanakoshi Shotokan Karate Association) tournaments around the world.
-Was Team captain for England trip in 2007.
+Team captain for England trip - 2007.
 \newline
 \textbf{Won:}
 \begin{itemize}%
-\item 4 silver medals, 2 bronze and 4th place
 \item 2 silvers (kata, unisan kata) Las Vegas
 \item 1 silver (Kata) Italy
 \item 1 Silver (unisan kata) England
 \item 4th place (Komite) Las Vegas
-\item 1 bronze (Team Komite) England
+\item 1 Bronze (Team Komite) England
 \item 1 Bronze (Komite) Italy 
 \end{itemize}}
 
 \section{Projects \& Programs}
-\cventry{CUDA-Squeeze}{SKA Compression project}{Honours}{}{}{SKA (Square Kilometer Array) compression project. Determine best method in order to compress the Radio Satellite data in real time. I worked on a Huffman coding \& Adaptive Huffman Coding algorithm.}
-\cventry{Fly-DragonFly}{Android Arcade Game}{}{}{\newline{}}{Android survival game based on old top down scrolling arcade games.}
+\cventry{CUDA-Squeeze}{SKA Compression project}{Honours}{}{}{SKA (Square Kilometer Array) compression project. Determine best method in order to compress the Radio Satellite data in real time. I worked on a Huffman coding \& Adaptive Huffman Coding algorithm. This project was done in conjunction with: Benjamin Hugo and Heinricht Strauss.\\ \url{https://people.cs.uct.ac.za/~hstrauss/cudasqueeze/}}
+\cventry{Fly-DragonFly}{Android Arcade Game}{}{}{}{Android survival game based on old top down scrolling arcade games.\\
+	\url{http://cs.uct.ac.za/~btalbot/\#/projects/flydragonfly}}
+\cventry{Nebulon 12}{XNA Arcade game}{}{}{}{XNA (windows anx Xbox) based 3D space game based on the arcade principals of Future Cop: LAPD.\\
+	\url{http://cs.uct.ac.za/~btalbot/\#/projects/bbngame}}
 \cventry{Height Map Analyser}{Biology reduction Height Map 
-Comparison program}{}{}{Allows for Graphing and many other comparisons between reductions in the UCT Biology department.}{Intent to Publish, wrote 95\% of code (all but the 3D GL renderer)}
-\cventry{Excel Editor}{Excel document creator for ICS \& ETLIN}{\newline{}Recurring}{}{\newline{}ETLIN \& ICS project}{Creates documents for ETLIN and ICS, from other excel documents created by \textit{MOSAIC}}
+Comparison program}{}{}{Allows for Graphing and many other comparisons between reductions in the UCT Biology department.}{Intent to Publish\\
+\url{http://cs.uct.ac.za/~btalbot/\#/projects/heightmapanalyzer}}
+\cventry{Excel Editor}{Excel document creator for ICS \& ETLIN}{\newline{}Recurring}{}{\newline{}ETLIN \& ICS project}{Creates documents for ETLIN and ICS, from other excel documents created by \textit{MOSAIC}.\\
+	\url{http://cs.uct.ac.za/~btalbot/\#/projects/exceleditor}}
 
 \section{University}
 \cventry{2013--2013}{B.Sc Hons}{University of Cape Town}{Cape Town}{}{Computer Science Honours\newline{}NRF (National Research Fund) Bursary - R40 000}  % arguments 3 to 6 can be left empty
@@ -161,22 +132,17 @@ Comparison program}{}{}{Allows for Graphing and many other comparisons between r
 	\item Cryptography \end{itemize}}
 {}{}{}{}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
-
 \section{Languages}
 \cvitemwithcomment{English}{Mother Tongue}{}
 \cvitemwithcomment{Afrikaans}{Basic Understanding}{}
 
 \section{Computer skills}
 \cvitem{Basic}{Python, LUA}
-\cvitem{Intermediate}{SQL, OpenGL, Android, Microsoft XNA, CUDA, HTML, PHP, JavaScript, Delphi, libGDX, XML, UML}
-\cvitem{Advanced}{C \& C++, Java, C\#, VB.net, Linux}
+\cvitem{Intermediate}{SQL, OpenGL, Android, Microsoft XNA, CUDA, HTML, PHP, JavaScript, Delphi, libGDX, XML, UNITY, Unreal Engine, Kotlin, VB.net}
+\cvitem{Advanced}{C \& C++, Java, C\#, Linux}
 \section{Interests}
 \cvitem{Karate}{Black Belt since 2007, Studied Shotokan Karate at Scorpion Karate under Shihan (6th Dan) Ravi Moodley}
-\cvitem{Mountain Climbing}{Activity with friends, and mountain biking}
+\cvitem{Mountain Climbing}{Activity with friends and mountain biking}
 \section{References}
 \begin{cvcolumns}
   \cvcolumn{Name}{\begin{itemize}\item Linda Lotter\item Caroline Talbot\item Ravi Moodley\item Philip De Kock\end{itemize}}
@@ -184,44 +150,27 @@ Comparison program}{}{}{Allows for Graphing and many other comparisons between r
   \cvcolumn{Phone number}{\begin{itemize}\item (+27) 83 4447 334\item (+27) 82 5555 113\item (+27) 82 6002 883\item (+27) 11 215 6666\end{itemize}}  
 \end{cvcolumns}
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
 \clearpage
-%-----       letter       ---------------------------------------------------------
-% recipient data
+
 \recipient{Company Recruitment Office}{}
 \opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\closing{Regards,}
+\enclosure[Attached]{curriculum vit\ae{}}
 \makelettertitle
 
-I am an enthusiastic programmer. I have been programming for over 6 years now and still love it. I particularly enjoy graphics programming and data visualisation. I am highly dedicated and disciplined thanks to my Karate training, in which I trained for over 12 years.
+I am an enthusiastic programmer that particularly enjoys graphics programming and data visualisation. I am highly dedicated and disciplined thanks to my Karate training, of which I trained for over 12 years.
 
-I have a European passport, and have nothing against having to travel.
+I have a British Passport, and have nothing against having to travel or immegrate.
 
-Out of all the projects I have participated in, both at university and on my own, I enjoyed those where I designed graphical visualisations for data, and the projects where I created the graphical sections for games. 
+Out of all the projects I have participated in, I enjoyed those where I designed graphical visualisations for data, and the projects where I created the graphical sections for games.
 
-I have taken Networking, Cryptography, Linear Algebra, and Interface Design courses at UCT and have many projects on my website http://people.cs.uct.ac.za/\textasciitilde btalbot/.
+I have a degree in Computer Games Design and have worked on multiple games in the past few years, using tools such as Microsoft XNA, LibGDX and Unity. My Games Design Degree has taught me OpenGL and GLSL.  
+
+I have taken Networking, Cryptography, Linear Algebra, and Interface Design courses at UCT and have many projects on my website: \url{http://people.cs.uct.ac.za/\textasciitilde btalbot} and Github page: \url{https://github.com/DarkJaguar91}.
 
 
 \makeletterclosing
 
-\clearpage                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\clearpage
+
 \end{document}
-
-
-%% end of file `template.tex'.
