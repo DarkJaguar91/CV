@@ -32,24 +32,34 @@
 
 \section{Experience}
 \subsection{Full Time}
-\cventry{2017--2019}{Software Development Engineer II}{\newline Amazon}{Supply Chain Optimization Technologies}{Inventory Mapping}{	
-SDEII at Amazon Retail.\\
+\cventry{2017--present}{Software Development Engineer III}{\newline Amazon}{Supply Chain Optimization Technologies}{Inventory Mapping}{	
+SDEIII at Amazon Retail.\\\\
+Promoted from SDEII to SDEIII on \textit{1 July 2021} \\\\
 \textbf{Project}
 \begin{itemize}
-	\item \textbf{Inventory Mapping} \\
+	\item \textbf{Inventory Mapping}\\
 		\textit{(28 August 2017 - Present)}\\
-			Backend service development for the Amazon retail website and item fulfillment infrustructure. During my time in the Inventory Mapping team I decreased system data caching time from ~15 minutes to less than 7 minutes for partial updates and from ~36 hours to less than 15 hours for a full data refresh. I assisted in re-writing and designing a new system to migrate off of SQL with Oracle to Amazons no-SQL DynamoDB database. This process included designing precomputational systems and uniqueness enforcement with DynamoDB transactionality within the no-SQL database, DynamoDB, which ensures data quility and speed of the services responses. \\
-			This re-write included a change of language from Java to kotlin, during which time I designed and implemented Logging, Metrics and Caching libraries in Kotlin, which is now used by multiple internal Amazon teams.\\
-			\textbf{Technologies:}
-			\begin{itemize}
-				\item Java
-				\item Kotlin
-				\item ANT \& Gradle
-				\item DynamoDB
-				\item Oracle SQL
-				\item Big Data
-				\item Precomputation
-			\end{itemize}
+		Backend microservice development for the Amazon retail website and item placement \& fulfillment infrastructure. \\
+		During my time in the Inventory Mapping team I:
+	    \begin{itemize}
+	        \item Decreased system data caching times from ~15 minutes to less than 7 minutes for delta changes, and from ~36 hours to less than 15 hours for a full data refresh.
+	        \item Created and designed a new system which runs pre-computation on relational data in order to easily and efficiently query said relational data within a no-SQL database, DynamoDB, in order to migrate away from Oracle SQL. The new system improved latency from 20+ms to 5ms on average while also lowering eventual consistency across tables and regions from 2 hours to less than 5 minutes.
+	        \item Implemented systems to ensure data correctness using a Guardrails mechanism and workflow engine. Which includes internal websites for displaying and creating new data entries from approved users.
+	        \item Migrated core service code from Java/C++ to Kotlin. Including created a Logging, Metrics \& Caching library in Kotlin which is now used across Amazon, including AWS services.
+	    \end{itemize}
+		\textbf{Technologies:}
+		\begin{itemize}
+			\item Kotlin
+			\item Java
+			\item ANT \& Gradle
+			\item Oracle SQL
+			\item AWS - DynamoDB
+			\item AWS - ECS / ECR (Docker/Kubernetes)
+			\item AWS - Redshift / Redis
+			\item AWS - VPC/EC2/Load Balancing/Networking
+			\item AWS - CloudFront (Website Hosting)
+			\item Big Data
+		\end{itemize}
 \end{itemize}
 }
 \cventry{2014--2017}{Intermediate Software Engineer}{\newline Entelect}{}{}{	
@@ -64,6 +74,7 @@ Software development consultant for Entelect.\\
 				\item Android
 				\item Java
 				\item Maven and Gradle
+				\item Ruby/Cucumber Testing
 			\end{itemize}
 	\item \textbf{Seecrypt} \\
 		\textit{(26 October 2014 - 09 February 2016)}\\
@@ -71,7 +82,7 @@ Software development consultant for Entelect.\\
 			\textbf{Technologies:}
 			\begin{itemize}
 				\item Android
-				\item Java
+				\item Java/Kotlin
 				\item C and C++ with JNI
 				\item SQLite and SQLCipher
 				\item Cryptography
@@ -146,7 +157,7 @@ Comparison program}{}{}{Allows for Graphing and many other comparisons between r
 \section{Computer skills}
 \cvitem{Basic}{Python, LUA}
 \cvitem{Intermediate}{SQL, OpenGL, Android, Microsoft XNA, CUDA, HTML, PHP, JavaScript, Delphi, libGDX, XML, UNITY, Unreal Engine, Kotlin, VB.net}
-\cvitem{Advanced}{C \& C++, Java, C\#, Linux}
+\cvitem{Advanced}{C \& C++, Java, C\#, Linux, AWS}
 \section{Interests}
 \cvitem{Karate}{Black Belt since 2007, Studied Shotokan Karate at Scorpion Karate under Shihan (6th Dan) Ravi Moodley}
 \cvitem{Mountain Climbing}{Activity with friends and mountain biking}
@@ -161,6 +172,7 @@ Comparison program}{}{}{Allows for Graphing and many other comparisons between r
   		\item Hennie Lessing
   		\item Christopher Kieser
   		\item Mike Bacus
+  		\item Tomasz Przybla
   	\end{itemize}}
   \cvcolumn{Company}{
   	\begin{itemize}
@@ -170,6 +182,7 @@ Comparison program}{}{}{Allows for Graphing and many other comparisons between r
   		\item BSG Line Manager
   		\item Entelect
   		\item Seecrypt
+  		\item Amazon SCOT
   		\item Amazon SCOT
   	\end{itemize}}  
   \cvcolumn{Phone number}{
@@ -181,6 +194,7 @@ Comparison program}{}{}{Allows for Graphing and many other comparisons between r
   		\item (+27) 83 3791 626
   		\item (+27) 82 4564 489
   		\item (+01) 503 616 8272 
+  		\item (+01) 604 719 4946 
   	\end{itemize}}  
 \end{cvcolumns}
 
